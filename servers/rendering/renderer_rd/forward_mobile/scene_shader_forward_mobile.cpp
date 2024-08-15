@@ -655,6 +655,7 @@ void SceneShaderForwardMobile::init(const String p_defines) {
 		actions.renames["INSTANCE_ID"] = "INSTANCE_INDEX";
 		actions.renames["VERTEX_ID"] = "VERTEX_INDEX";
 		actions.renames["Z_CLIP_SCALE"] = "z_clip_scale";
+		actions.renames["TRIANGLE_ID"] = "gl_PrimitiveID";
 
 		actions.renames["ALPHA_SCISSOR_THRESHOLD"] = "alpha_scissor_threshold_highp";
 		actions.renames["ALPHA_HASH_SCALE"] = "alpha_hash_scale_highp";

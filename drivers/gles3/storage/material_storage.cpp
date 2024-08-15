@@ -1264,6 +1264,7 @@ MaterialStorage::MaterialStorage() {
 		actions.renames["INSTANCE_ID"] = "gl_InstanceID";
 		actions.renames["VERTEX_ID"] = "gl_VertexID";
 		actions.renames["Z_CLIP_SCALE"] = "z_clip_scale";
+		actions.renames["TRIANGLE_ID"] = "gl_PrimitiveID";
 
 		actions.renames["ALPHA_SCISSOR_THRESHOLD"] = "alpha_scissor_threshold";
 		actions.renames["ALPHA_HASH_SCALE"] = "alpha_hash_scale";
