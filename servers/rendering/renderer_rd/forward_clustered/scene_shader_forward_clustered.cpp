@@ -654,6 +654,9 @@ void SceneShaderForwardClustered::init(const String p_defines) {
 		actions.renames["VIEW"] = "view";
 		actions.renames["SPECULAR_AMOUNT"] = "specular_amount";
 		actions.renames["LIGHT_COLOR"] = "light_color";
+		//custom
+		actions.renames["LIGHT_INDEX"] = "light_index";
+		//
 		actions.renames["LIGHT_IS_DIRECTIONAL"] = "is_directional";
 		actions.renames["LIGHT"] = "light";
 		actions.renames["ATTENUATION"] = "attenuation";
@@ -696,6 +699,10 @@ void SceneShaderForwardClustered::init(const String p_defines) {
 		actions.usage_defines["SSS_TRANSMITTANCE_DEPTH"] = "#define ENABLE_TRANSMITTANCE\n";
 		actions.usage_defines["BACKLIGHT"] = "#define LIGHT_BACKLIGHT_USED\n";
 		actions.usage_defines["SCREEN_UV"] = "#define SCREEN_UV_USED\n";
+
+		//custom
+		actions.usage_defines["LIGHT_INDEX"] = "#define LIGHT_SOURCE_INFO\n";
+		//
 
 		actions.usage_defines["FOG"] = "#define CUSTOM_FOG_USED\n";
 		actions.usage_defines["RADIANCE"] = "#define CUSTOM_RADIANCE_USED\n";
